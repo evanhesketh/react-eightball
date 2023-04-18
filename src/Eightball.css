@@ -2,9 +2,12 @@
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.Eightball-msg {
+  color: white;
   font-weight: 800;
 }
