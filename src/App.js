@@ -6,7 +6,7 @@ import Eightball from './Eightball';
  *
  * No props or state.
  *
- * App --> Eightball(props=answers)
+ * App --> Eightball(props=answers) //TODO: don't need props=answers
  */
 
 function App() {
