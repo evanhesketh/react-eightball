@@ -1,4 +1,4 @@
-import getRandomIdx from "./random";
+import getRandomNum from "./random";
 import { useState } from "react";
 import "./Eightball.css";
 
@@ -19,7 +19,7 @@ function Eightball({ answers }) {
   const [msg, setMsg] = useState("Think of a question");
 
   function handleClick(evt) {
-    const randomIdx = getRandomIdx(answers.length);
+    const randomIdx = getRandomNum(answers.length);
     const { msg, color } = answers[randomIdx];
     setColor(color);
     setMsg(msg);
