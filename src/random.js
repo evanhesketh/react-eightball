@@ -5,7 +5,7 @@
  * Returns random number between 0 and max number
  */
 
-function getRandomNum (max) {
+function getRandomNum(max) {
   return Math.floor(Math.random() * max);
 }
 
