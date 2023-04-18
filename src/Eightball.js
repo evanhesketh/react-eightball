@@ -15,23 +15,25 @@ import "./Eightball.css";
  */
 
 function Eightball({ answers }) {
-  const [color, setColor] = useState("black");
-  const [msg, setMsg] = useState("Think of a question");
+  const [answer, setAnswer] = useState({
+    color:"black",
+    msg: "Think of a question"
+  });
 
   function handleClick(evt) {
     const randomIdx = getRandomNum(answers.length);
-    const { msg, color } = answers[randomIdx];
-    setColor(color);
-    setMsg(msg);
+    setAnswer(answers[randomIdx]);
+    // FIXME: color and msg always go together - create 1 piece of state
+    // as object of msg and color. ensures that you dn't update msg but not color, etc.
   }
 
   return (
     <div
       className="Eightball"
-      style={{ backgroundColor: color }}
+      style={{ backgroundColor: answer.color }}
       onClick={handleClick}
     >
-      <p className="Eightball-msg">{msg}</p>
+      <p className="Eightball-msg">{answer.msg}</p>
     </div>
   );
 }
