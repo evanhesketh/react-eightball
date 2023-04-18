@@ -1,0 +1,10 @@
+.Eightball {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+}
